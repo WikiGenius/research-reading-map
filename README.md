@@ -3,7 +3,7 @@
 ## Overview
 This repository is the public reading and architecture map for mobile manipulation, active perception, coverage planning, state estimation, and uncertainty-aware control papers. It is intended to organize research themes, paper notes, implementation links, and future experiment ideas in one reproducible place.
 
-The current repository contains the initial public structure. Paper notes, diagrams, bibliographies, and reading paths will be added over time.
+The repository now includes a research architecture map, a topic taxonomy, and a reusable paper-note template. Full paper notes, bibliographies, diagrams, and reading paths will be added over time.
 
 ## Repository Role
 This repo is the public research map for the whole GitHub organization. It connects the theory and papers to the public portfolio repositories without exposing private unpublished research code.
@@ -25,15 +25,15 @@ Robotics research spans many connected areas: planning, control, perception, est
 This repository is meant to support research planning by connecting papers to questions, methods, assumptions, metrics, and possible reproduction tasks.
 
 ## Features
-- Planned reading map for mobile manipulation and active perception.
-- Planned paper notes grouped by topic.
+- Research architecture map connecting pinned and support repositories.
+- Topic taxonomy for active scanning, mobile manipulation, estimation, control, and 3D perception.
+- Paper-note template for consistent future literature notes.
 - Planned bibliography and citation tracking.
 - Planned diagrams showing relationships between methods.
 - Planned reproduction checklist for selected papers.
-- Public architecture map connecting pinned and support repositories.
 
 ## Method
-The reading map will organize papers using a lightweight structure:
+The reading map organizes papers using a lightweight structure:
 
 1. Topic area and research question.
 2. Core idea of each paper.
@@ -70,7 +70,15 @@ pip install -r requirements.txt
 ```
 
 ## Run
-This repository is currently a documentation scaffold. Planned script pattern:
+This repository is currently documentation-first. Start with:
+
+```text
+docs/research-architecture.md
+docs/topic-taxonomy.md
+docs/paper-note-template.md
+```
+
+Planned script pattern:
 
 ```bash
 python scripts/build_reading_map.py
@@ -90,12 +98,15 @@ Planned artifacts:
 - Public repository architecture diagram.
 
 ## Limitations
-- This repository currently contains structure, not a complete literature review.
+- This repository currently contains the research map structure, not a complete literature review.
 - Paper notes will be summaries and personal research notes, not substitutes for reading the original papers.
 - Some implementation details may be deferred until related experiments are public.
 - Private research repositories are referenced only as a policy layer, not by exposing unpublished details.
 
 ## Roadmap
+- [x] Add public research architecture map.
+- [x] Add topic taxonomy.
+- [x] Add paper-note template.
 - [ ] Add core paper list for active perception.
 - [ ] Add mobile manipulation reading path.
 - [ ] Add coverage planning and state estimation sections.
