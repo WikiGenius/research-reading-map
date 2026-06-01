@@ -1,0 +1,4 @@
+bibtexparser
+pandas
+networkx
+matplotlib
