@@ -39,7 +39,7 @@ Questions:
 Related public repos:
 
 - [`GTSAM_SLAM_VISION`](https://github.com/WikiGenius/GTSAM_SLAM_VISION)
-- [`orb_slam_demo`](https://github.com/WikiGenius/orb_slam_demo)
+- [`husky-gazebo-image-capture`](https://github.com/WikiGenius/husky-gazebo-image-capture)
 
 ## 4. Control and Tracking
 

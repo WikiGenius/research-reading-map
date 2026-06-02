@@ -25,7 +25,7 @@ research-reading-map
       -> GTSAM_SLAM_VISION
       -> nerf-lab
   -> GTSAM_SLAM_VISION
-      -> orb_slam_demo
+      -> husky-gazebo-image-capture
       -> nerf-lab
   -> robotics-control-learning-labs
       -> wmm-trajectory-tracking
@@ -58,7 +58,7 @@ Keep exact unpublished scanning algorithms, private datasets, calibration detail
 | Repo | Status | Purpose |
 |---|---|---|
 | [`GTSAM_SLAM_VISION`](https://github.com/WikiGenius/GTSAM_SLAM_VISION) | Public core, pinned | Factor-graph visual SLAM and pose-estimation experiments. |
-| [`orb_slam_demo`](https://github.com/WikiGenius/orb_slam_demo) | Public support | ORB-SLAM-style ROS2 visual state-estimation scaffold. |
+| [`husky-gazebo-image-capture`](https://github.com/WikiGenius/husky-gazebo-image-capture) | Public support | ROS2 Humble support node for Gazebo Husky image/odometry snapshot capture. |
 | [`nerf-lab`](https://github.com/WikiGenius/nerf-lab) | Public support | NeRF, ray marching, view synthesis, and scene-representation intuition for active perception. |
 
 ### 4. Control, Dynamics, and Robot Math
