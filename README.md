@@ -1,103 +1,33 @@
 # Research Reading Map
 
-Public research-reading and architecture scaffold for mobile manipulation, active perception, coverage planning, state estimation, and uncertainty-aware control.
-
 ## Purpose
 
-This repository exists to organize public-facing literature structure, paper-note templates, topic taxonomies, and links between research themes and public repositories. It is not a private research notebook and does not contain confidential gap analysis, advisor notes, unpublished paper drafts, or copied paper content.
+This repository is a public scaffold for organizing reading themes, paper-note templates, and research architecture around mobile manipulation, active sensing, coverage planning, state estimation, and robotics control.
 
-The repository currently includes a research architecture map, a topic taxonomy, and a reusable paper-note template. Full paper notes, bibliographies, diagrams, and reading paths will be added over time.
-
-## Relation to My PhD Direction
-
-My research focuses on structure-aware planning and control for mobile manipulation, where robot motion actively acquires useful visual/spectral information under physical, geometric, sensing, and uncertainty constraints.
-
-This reading map supports that direction by organizing public literature themes around:
-
-- mobile manipulation,
-- active sensing and active perception,
-- line-scan / RGB-to-hyperspectral proxy scanning,
-- coverage planning,
-- geometric visibility constraints,
-- state estimation and SLAM,
-- uncertainty-aware control,
-- ROS2/MoveIt and implementation pathways.
-
-Main public links:
-
-| Theme | Related repo | Role |
-|---|---|---|
-| Structure-aware active scanning | [`line-scan-mobile-manipulator-demo`](https://github.com/WikiGenius/line-scan-mobile-manipulator-demo) | Public anchor scaffold for line-scan / RGB-hyperspectral active scanning. |
-| Mobile manipulation execution | [`ros2-moveit-grasping-demo`](https://github.com/WikiGenius/ros2-moveit-grasping-demo) | ROS2/MoveIt2 perception-guided grasping and execution evidence. |
-| State estimation / SLAM | [`GTSAM_SLAM_VISION`](https://github.com/WikiGenius/GTSAM_SLAM_VISION) | Factor-graph visual estimation and SLAM-style experiments. |
-| Control / dynamics | [`robotics-control-learning-labs`](https://github.com/WikiGenius/robotics-control-learning-labs) | State-space, LQR, observers, and control baselines. |
-| ROS2 systems | [`ros2-mobile-robotics-labs`](https://github.com/WikiGenius/ros2-mobile-robotics-labs) | ROS2 mobile robotics learning and simulation workflows. |
-| 3D perception / view synthesis | [`nerf-lab`](https://github.com/WikiGenius/nerf-lab) | NeRF/ray-based intuition for viewpoint coverage and scene representation. |
+It is not a private gap-analysis repo. It should contain public-safe organization material, not advisor notes, unpublished paper strategy, private comparisons, or copied paper content.
 
 ## Maturity Level
 
-**Current status:** Public research scaffold / early-stage organization repo
+**Current status:** Public research scaffold / early-stage reading organization repo.
 
-This repository is currently intended to organize the public-facing literature and research architecture. It does not yet represent a complete literature review, systematic review, or validated research taxonomy.
+The repository currently provides structure for future reading notes and paper tables. It does not yet represent a complete literature review, systematic review, or finalized taxonomy.
 
 ### Implemented now
 
-- [x] Repository structure
-- [x] README and project organization
-- [x] Public research architecture map
-- [x] Topic taxonomy
-- [x] Paper-note template
-- [ ] Core paper bibliography
-- [ ] Reading path by topic
-- [ ] Summary tables
-- [ ] Method relationship diagrams
-- [ ] Reproduction checklist for selected papers
+- [x] Repository structure.
+- [x] README and project organization.
+- [x] Public research architecture map.
+- [x] Topic taxonomy.
+- [x] Paper-note template.
+- [x] Core papers table template with `TBD` placeholders.
+- [ ] Real selected paper bibliography.
+- [ ] Reading path by topic.
+- [ ] Summary tables.
+- [ ] Method relationship diagrams.
 
-### Not included publicly
+## Public Scope
 
-- Private gap analysis
-- Advisor/collaborator notes
-- Full paper drafts
-- Confidential experiment ideas
-- Full unpublished method comparisons
-- Copied figures/tables/text from papers
-
-## Current Contents
-
-```text
-docs/research-architecture.md   public repo architecture and release policy
-docs/topic-taxonomy.md          public topic structure
-docs/paper-note-template.md     reusable note template
-scripts/                        future bibliography/map scripts
-results/                        future generated tables/graphs
-media/                          future diagrams or public figures
-```
-
-## What This Repo Demonstrates Now
-
-This repo currently demonstrates:
-
-- a public architecture map for the GitHub research portfolio,
-- a topic taxonomy for active scanning, manipulation, control, estimation, and 3D perception,
-- a safe paper-note template that avoids copying copyrighted content,
-- a place to link papers to future public reproductions.
-
-It does not yet contain a complete literature review.
-
-## Planned Development Roadmap
-
-- **Stage 0: repository scaffold** - organize README, docs, public/private policy, and templates.
-- **Stage 1: toy public structure** - maintain topic taxonomy and note template.
-- **Stage 2: bibliography table** - add core paper list with citation links.
-- **Stage 3: method map** - connect topics, assumptions, metrics, and public repos.
-- **Stage 4: reproduction planning** - identify public-safe toy reproductions.
-- **Stage 5: generated outputs** - create summary tables or diagrams.
-- **Stage 6: paper-supporting private implementation** - keep private gap analysis and unpublished comparisons elsewhere.
-- **Stage 7: post-publication public release** - add paper/report links after approval.
-
-## Public / Private Boundary
-
-Public here:
+Public content can include:
 
 - paper lists,
 - high-level summaries in my own words,
@@ -106,65 +36,54 @@ Public here:
 - citation metadata,
 - public-safe reproduction ideas.
 
-Private elsewhere:
+## What Stays Private
+
+Keep the following out of this public repo:
 
 - private gap analysis,
 - advisor feedback,
 - collaborator notes,
 - unpublished paper strategy,
 - detailed private method comparisons,
-- reviewer-response planning.
+- reviewer-response planning,
+- copied figures, tables, or long paper text.
 
-## How to Run
-
-This repository is currently documentation-first. Start with:
+## Current Contents
 
 ```text
-docs/research-architecture.md
-docs/topic-taxonomy.md
-docs/paper-note-template.md
+docs/research-architecture.md   public repo architecture and release policy
+docs/topic-taxonomy.md          public topic structure
+docs/paper-note-template.md     reusable note template
+docs/core_papers_table.md       placeholder table for future real paper selections
+scripts/                        future bibliography/map scripts
+results/                        future generated tables/graphs
+media/                          future diagrams or public figures
 ```
 
-No complete runnable bibliography generator is included yet. The next planned step is to add a small bibliography table or script.
+## Planned Additions
 
-Planned script pattern:
+- Real selected paper bibliography.
+- Reading paths for active perception, coverage planning, mobile manipulation, and estimation.
+- Public-safe method relationship table.
+- Reproduction checklist for selected papers.
+- Diagrams that use original public-safe content only.
 
-```bash
-python scripts/build_reading_map.py
-```
+## Paper Note Template
 
-## Expected Future Outputs
+Use [`docs/paper-note-template.md`](docs/paper-note-template.md) for future notes. Notes should summarize papers in my own words and should not copy abstracts, figures, or tables.
 
-Future public artifacts may include:
+## Core Papers Table
 
-- bibliography tables,
-- topic graphs,
-- reading-order roadmaps,
-- paper summary tables,
-- reproduction checklists,
-- diagrams connecting papers to public repos.
+Use [`docs/core_papers_table.md`](docs/core_papers_table.md) to organize papers once they are actually selected.
 
-## Limitations
+Current placeholder format:
 
-This repository is currently an early-stage public scaffold. It does not yet include:
+| ID | Paper | Venue/Year | Topic | Why relevant | Use |
+|---|---|---|---|---|---|
+| P001 | TBD | TBD | Mobile manipulation planning | TBD | Related work / baseline |
 
-- a complete literature review,
-- systematic search protocol,
-- full bibliography,
-- validated taxonomy,
-- benchmark comparisons,
-- paper-level results.
-
-Paper notes should be summaries and personal research notes, not substitutes for reading the original papers.
-
-## Citation / Acknowledgment
-
-All papers, books, libraries, courses, and datasets summarized here should be cited clearly in the relevant notes. Copyrighted paper text should not be copied into this repository beyond short, properly attributed excerpts.
+Do not invent citations. Replace `TBD` only after a real paper is selected.
 
 ## Rights and Reuse
 
 This repository is shared as a public academic portfolio/scaffold. Unless a separate open-source license is explicitly added, all rights are reserved by the author.
-
-## Research Architecture
-
-See [`docs/research-architecture.md`](docs/research-architecture.md) for the public repository architecture and private/public release policy.
