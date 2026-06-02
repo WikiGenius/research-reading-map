@@ -1,89 +1,140 @@
 # Research Reading Map
 
+This repository is a public scaffold for organizing reading paths, paper-note templates, and high-level literature structure for my PhD research direction.
+
+It is not a private research notebook and does not include unpublished gap analysis, advisor notes, private paper drafts, or detailed contribution strategy.
+
 ## Purpose
 
-This repository is a public scaffold for organizing reading themes, paper-note templates, and research architecture around mobile manipulation, active sensing, coverage planning, state estimation, and robotics control.
+The purpose of this repository is to organize public, non-confidential reading structure around robotics, control, mobile manipulation, motion planning, state estimation, and active sensing.
 
-It is not a private gap-analysis repo. It should contain public-safe organization material, not advisor notes, unpublished paper strategy, private comparisons, or copied paper content.
+It is designed to support systematic reading and help connect papers to future research artifacts.
 
 ## Maturity Level
 
-**Current status:** Public research scaffold / early-stage reading organization repo.
+**Current status:** Public reading scaffold.
 
-The repository currently provides structure for future reading notes and paper tables. It does not yet represent a complete literature review, systematic review, or finalized taxonomy.
-
-### Implemented now
-
-- [x] Repository structure.
-- [x] README and project organization.
-- [x] Public research architecture map.
-- [x] Topic taxonomy.
-- [x] Paper-note template.
-- [x] Core papers table template with `TBD` placeholders.
-- [ ] Real selected paper bibliography.
-- [ ] Reading path by topic.
-- [ ] Summary tables.
-- [ ] Method relationship diagrams.
+This repository currently provides organization and templates. It is not yet a complete systematic literature review.
 
 ## Public Scope
 
-Public content can include:
+This public repository may include:
 
-- paper lists,
-- high-level summaries in my own words,
-- topic taxonomy,
-- public repo links,
-- citation metadata,
-- public-safe reproduction ideas.
+- reading categories,
+- paper-note templates,
+- high-level taxonomy,
+- public reading lists,
+- non-confidential summaries,
+- bibliographic organization.
 
 ## What Stays Private
 
-Keep the following out of this public repo:
+The following materials stay private in the research-core repository:
 
-- private gap analysis,
+- detailed gap analysis,
 - advisor feedback,
-- collaborator notes,
 - unpublished paper strategy,
-- detailed private method comparisons,
-- reviewer-response planning,
-- copied figures, tables, or long paper text.
+- private draft sections,
+- reviewer-response preparation,
+- exact contribution hypotheses,
+- confidential collaboration notes.
 
 ## Current Contents
 
-```text
-docs/research-architecture.md   public repo architecture and release policy
-docs/topic-taxonomy.md          public topic structure
-docs/paper-note-template.md     reusable note template
-docs/core_papers_table.md       placeholder table for future real paper selections
-scripts/                        future bibliography/map scripts
-results/                        future generated tables/graphs
-media/                          future diagrams or public figures
+This repository is intended to organize papers related to:
+
+- mobile manipulation,
+- coverage planning,
+- active perception,
+- viewpoint planning,
+- line-scan and pushbroom sensing,
+- hyperspectral robotic scanning,
+- state estimation,
+- planning under uncertainty,
+- ROS2 / MoveIt / OMPL-related baselines.
+
+## Core Papers Table
+
+The detailed reading table will be populated as papers are selected and reviewed.
+
+| ID | Paper | Venue/Year | Topic | Why Relevant | Use |
+|---|---|---|---|---|---|
+| P001 | TBD | TBD | Mobile manipulation planning | TBD | Related work / baseline |
+| P002 | TBD | TBD | Coverage planning | TBD | Related work / baseline |
+| P003 | TBD | TBD | Active perception | TBD | Related work |
+| P004 | TBD | TBD | Viewpoint planning | TBD | Baseline / comparison |
+| P005 | TBD | TBD | Line-scan sensing | TBD | Sensor model |
+| P006 | TBD | TBD | Hyperspectral robotic scanning | TBD | Application context |
+| P007 | TBD | TBD | State estimation | TBD | Estimation component |
+| P008 | TBD | TBD | Planning under uncertainty | TBD | Method comparison |
+| P009 | TBD | TBD | Mobile manipulator inspection | TBD | Related work |
+| P010 | TBD | TBD | ROS2 / MoveIt planning | TBD | Implementation baseline |
+
+## Paper Note Template
+
+Each paper note should use this structure:
+
+```markdown
+# Paper Title
+
+## Citation
+
+Full citation.
+
+## One-Sentence Summary
+
+Explain the paper in my own words.
+
+## Problem
+
+What problem does the paper solve?
+
+## Method
+
+How does the method work?
+
+## Experiments
+
+What experiments were used?
+
+## Baselines
+
+What did the authors compare against?
+
+## Metrics
+
+What metrics were reported?
+
+## Strengths
+
+What is strong about this paper?
+
+## Limitations
+
+What is missing or weak?
+
+## Relation to My Research
+
+How does this paper connect to mobile manipulation, planning, state estimation, active sensing, or line-scan scanning?
+
+## Possible Use
+
+Related work, baseline, method inspiration, or not relevant.
 ```
 
 ## Planned Additions
 
-- Real selected paper bibliography.
-- Reading paths for active perception, coverage planning, mobile manipulation, and estimation.
-- Public-safe method relationship table.
-- Reproduction checklist for selected papers.
-- Diagrams that use original public-safe content only.
+Planned public additions include:
 
-## Paper Note Template
+- selected core papers,
+- reading categories,
+- non-confidential paper summaries,
+- topic maps,
+- baseline tracking,
+- public bibliography notes.
 
-Use [`docs/paper-note-template.md`](docs/paper-note-template.md) for future notes. Notes should summarize papers in my own words and should not copy abstracts, figures, or tables.
+## Limitations
 
-## Core Papers Table
+This repository is not yet a complete literature review.
 
-Use [`docs/core_papers_table.md`](docs/core_papers_table.md) to organize papers once they are actually selected.
-
-Current placeholder format:
-
-| ID | Paper | Venue/Year | Topic | Why relevant | Use |
-|---|---|---|---|---|---|
-| P001 | TBD | TBD | Mobile manipulation planning | TBD | Related work / baseline |
-
-Do not invent citations. Replace `TBD` only after a real paper is selected.
-
-## Rights and Reuse
-
-This repository is shared as a public academic portfolio/scaffold. Unless a separate open-source license is explicitly added, all rights are reserved by the author.
+It does not include private gap analysis, unpublished paper strategy, or advisor-specific research planning.
