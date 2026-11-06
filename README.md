@@ -1,140 +1,50 @@
 # Research Reading Map
 
-This repository is a public scaffold for organizing reading paths, paper-note templates, and high-level literature structure for my PhD research direction.
+A reading structure for **perception-aware motion planning**: choosing robot motion based on task-relevant sensing quality and uncertainty as well as motion feasibility.
 
-It is not a private research notebook and does not include unpublished gap analysis, advisor notes, private paper drafts, or detailed contribution strategy.
+This repository currently provides organization and note templates. It is not a completed systematic literature review.
 
-## Purpose
+## Reading questions
 
-The purpose of this repository is to organize public, non-confidential reading structure around robotics, control, mobile manipulation, motion planning, state estimation, and active sensing.
+| Theme | Questions to ask |
+| --- | --- |
+| Task and sensing objective | What does the robot need to observe or estimate? How is sensing quality measured? |
+| Observation models | What measurements does the sensor produce? Which assumptions depend on the sensing modality? |
+| State estimation and uncertainty | What is uncertain, how is it represented, and is the uncertainty estimate calibrated? |
+| Scene representation | What geometry or map does the planner require? How are unknown and occluded regions represented? |
+| Motion planning | How are observation quality, motion cost, and robot constraints combined? |
+| Control and execution | How do tracking error, timing, and actuator constraints affect sensing? |
+| Evaluation | Which baselines, metrics, datasets, and ablations support the claims? |
 
-It is designed to support systematic reading and help connect papers to future research artifacts.
+The research scope is open to different sensors and robot platforms. RGB-D and hyperspectral sensing are initial application interests. Line-scan acquisition and mobile manipulation are useful case studies, not the organizing boundary of the literature.
 
-## Maturity Level
+## Connect reading to implementation
 
-**Current status:** Public reading scaffold.
+| Area | Related projects |
+| --- | --- |
+| Planning and tracking | [WMM planning and tracking](https://github.com/WikiGenius/wmm-planning-and-tracking), [UGV–Panda geometric control](https://github.com/WikiGenius/ugv-panda-geometric-control) |
+| Estimation and representation | [GTSAM SLAM Vision](https://github.com/WikiGenius/GTSAM_SLAM_VISION), [NeRF Lab](https://github.com/WikiGenius/nerf-lab) |
+| Kinematics and execution | [Screw Theory Toolkit](https://github.com/WikiGenius/RoboticScrewTheoryToolkit), [MoveIt grasping](https://github.com/WikiGenius/ros2-moveit-grasping-demo) |
+| An initial sensing application | [Line-scan scaffold](https://github.com/WikiGenius/line-scan-mobile-manipulator-demo) |
 
-This repository currently provides organization and templates. It is not yet a complete systematic literature review.
+These links identify possible implementation connections. They do not imply that a paper has been reproduced or a method validated.
 
-## Public Scope
+## Paper-note template
 
-This public repository may include:
+For each selected paper, record:
 
-- reading categories,
-- paper-note templates,
-- high-level taxonomy,
-- public reading lists,
-- non-confidential summaries,
-- bibliographic organization.
+- **Citation:** authors, title, venue/year, DOI or source URL.
+- **Problem:** task, robot, sensor, and operating assumptions.
+- **Method:** observation model, objective, planner, and uncertainty treatment.
+- **Evidence:** experiments, baselines, metrics, and reported outcomes.
+- **Limitations:** what the evidence does not establish.
+- **Research connection:** reusable idea, relevant baseline, or application-specific assumption.
+- **Reproduction status:** read, analyzed, implemented, or reproduced—with evidence for the status.
 
-## What Stays Private
+Add real citations as papers are selected; placeholder entries are not literature evidence. Keep paper claims separate from personal hypotheses and independently reproduced results.
 
-The following materials stay private in the research-core repository:
+## Public scope
 
-- detailed gap analysis,
-- advisor feedback,
-- unpublished paper strategy,
-- private draft sections,
-- reviewer-response preparation,
-- exact contribution hypotheses,
-- confidential collaboration notes.
+Public notes may contain bibliographic details, reading categories, and original summaries of shareable material. Confidential collaboration notes, unpublished contribution strategy, and manuscript drafts stay private.
 
-## Current Contents
-
-This repository is intended to organize papers related to:
-
-- mobile manipulation,
-- coverage planning,
-- active perception,
-- viewpoint planning,
-- line-scan and pushbroom sensing,
-- hyperspectral robotic scanning,
-- state estimation,
-- planning under uncertainty,
-- ROS2 / MoveIt / OMPL-related baselines.
-
-## Core Papers Table
-
-The detailed reading table will be populated as papers are selected and reviewed.
-
-| ID | Paper | Venue/Year | Topic | Why Relevant | Use |
-|---|---|---|---|---|---|
-| P001 | TBD | TBD | Mobile manipulation planning | TBD | Related work / baseline |
-| P002 | TBD | TBD | Coverage planning | TBD | Related work / baseline |
-| P003 | TBD | TBD | Active perception | TBD | Related work |
-| P004 | TBD | TBD | Viewpoint planning | TBD | Baseline / comparison |
-| P005 | TBD | TBD | Line-scan sensing | TBD | Sensor model |
-| P006 | TBD | TBD | Hyperspectral robotic scanning | TBD | Application context |
-| P007 | TBD | TBD | State estimation | TBD | Estimation component |
-| P008 | TBD | TBD | Planning under uncertainty | TBD | Method comparison |
-| P009 | TBD | TBD | Mobile manipulator inspection | TBD | Related work |
-| P010 | TBD | TBD | ROS2 / MoveIt planning | TBD | Implementation baseline |
-
-## Paper Note Template
-
-Each paper note should use this structure:
-
-```markdown
-# Paper Title
-
-## Citation
-
-Full citation.
-
-## One-Sentence Summary
-
-Explain the paper in my own words.
-
-## Problem
-
-What problem does the paper solve?
-
-## Method
-
-How does the method work?
-
-## Experiments
-
-What experiments were used?
-
-## Baselines
-
-What did the authors compare against?
-
-## Metrics
-
-What metrics were reported?
-
-## Strengths
-
-What is strong about this paper?
-
-## Limitations
-
-What is missing or weak?
-
-## Relation to My Research
-
-How does this paper connect to mobile manipulation, planning, state estimation, active sensing, or line-scan scanning?
-
-## Possible Use
-
-Related work, baseline, method inspiration, or not relevant.
-```
-
-## Planned Additions
-
-Planned public additions include:
-
-- selected core papers,
-- reading categories,
-- non-confidential paper summaries,
-- topic maps,
-- baseline tracking,
-- public bibliography notes.
-
-## Limitations
-
-This repository is not yet a complete literature review.
-
-It does not include private gap analysis, unpublished paper strategy, or advisor-specific research planning.
+[Return to the research portfolio](https://github.com/WikiGenius).
