@@ -1,25 +1,12 @@
-# Core Papers Table
+# Paper register
 
-This table is a public scaffold for organizing papers after they are selected and read. It intentionally uses `TBD` placeholders instead of invented citations.
+No paper records have been added yet. This page is an empty register, not a bibliography or a completed literature review.
 
-| ID | Paper | Venue/Year | Topic | Why relevant | Use |
-|---|---|---|---|---|---|
-| P001 | TBD | TBD | Mobile manipulation planning | TBD | Related work / baseline |
-| P002 | TBD | TBD | Active perception | TBD | Related work |
-| P003 | TBD | TBD | Coverage planning | TBD | Baseline / metric design |
-| P004 | TBD | TBD | Line-scan sensing | TBD | Sensor model motivation |
-| P005 | TBD | TBD | Hyperspectral pushbroom imaging | TBD | Sensing background |
-| P006 | TBD | TBD | Viewpoint planning | TBD | Planning comparison |
-| P007 | TBD | TBD | Visibility constraints | TBD | Constraint formulation |
-| P008 | TBD | TBD | Mobile manipulator control | TBD | Execution layer |
-| P009 | TBD | TBD | Factor-graph SLAM | TBD | State estimation background |
-| P010 | TBD | TBD | Pose uncertainty | TBD | Robustness evaluation |
-| P011 | TBD | TBD | ROS2 / MoveIt2 manipulation | TBD | Implementation context |
-| P012 | TBD | TBD | Robotic inspection | TBD | Application framing |
+| ID | Citation and source | Topic | Research connection | Review status |
+| --- | --- | --- | --- | --- |
 
-## Public Notes Policy
+Add a row only after selecting an identifiable paper. Include a DOI or source URL and link to an original note using the [paper-note template](paper-note-template.md). Distinguish reading, analysis, implementation, and reproduced results.
 
-- Do not copy paper abstracts.
-- Do not copy figures or tables from papers.
-- Add citations only after the actual paper has been selected.
-- Keep private gap analysis in private research notes, not in this public repository.
+The former P001–P012 rows were unassigned placeholders, not paper records. They have been removed from this view; the earlier template remains in Git history.
+
+[Reading questions and scope](../README.md) · [Topic taxonomy](topic-taxonomy.md)
