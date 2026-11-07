@@ -1,89 +1,19 @@
-# Topic Taxonomy
+# Topic taxonomy
 
-This taxonomy organizes paper notes around the research identity.
+Organize papers by the problem they address, then tag the sensor and robot used.
 
-## 1. Structure-Aware Active Scanning
+| Topic | Reading questions |
+| --- | --- |
+| Task and observation objectives | What must be observed or estimated? What makes a measurement useful? |
+| Sensor models | How do visibility, sampling, noise, timing, and calibration affect observations? |
+| Scene representation | How are geometry, unknown space, and occlusion represented? |
+| State estimation | What is uncertain? How is uncertainty propagated and evaluated? |
+| Motion planning | How are sensing value, motion cost, collision avoidance, and robot constraints combined? |
+| Control and execution | How do tracking error, dynamics, and timing affect sensing quality? |
+| Evaluation | Which baselines, metrics, ablations, and data support the conclusions? |
 
-Questions:
+Line-scan acquisition, RGB-D, hyperspectral sensing, mobile manipulation, and inspection are application tags. They do not limit the taxonomy to one sensor or platform.
 
-- How should a robot select viewpoints or trajectories to improve sensing quality?
-- How should line-scan or push-broom sensing geometry affect planning?
-- Which coverage metrics are meaningful for visual or spectral inspection?
+Suggested method tags: `active-perception`, `motion-planning`, `coverage-planning`, `state-estimation`, `scene-representation`, `feedback-control`, and `uncertainty`.
 
-Related public repo:
-
-- [`line-scan-mobile-manipulator-demo`](https://github.com/WikiGenius/line-scan-mobile-manipulator-demo)
-
-## 2. Mobile Manipulation and Whole-Body Planning
-
-Questions:
-
-- How should the mobile base and manipulator coordinate during inspection?
-- How do reachability, collision constraints, and base placement affect scan feasibility?
-- Which simplifications are acceptable for public demos?
-
-Related public repos:
-
-- [`ros2-moveit-grasping-demo`](https://github.com/WikiGenius/ros2-moveit-grasping-demo)
-- [`wmm-trajectory-tracking`](https://github.com/WikiGenius/wmm-trajectory-tracking)
-- [`ros2-mobile-robotics-labs`](https://github.com/WikiGenius/ros2-mobile-robotics-labs)
-
-## 3. State Estimation, SLAM, and Uncertainty
-
-Questions:
-
-- How does pose uncertainty affect scan quality?
-- Which factor-graph or SLAM methods are useful for visual state estimation?
-- How can estimation quality be included in planning metrics?
-
-Related public repos:
-
-- [`GTSAM_SLAM_VISION`](https://github.com/WikiGenius/GTSAM_SLAM_VISION)
-- [`husky-gazebo-image-capture`](https://github.com/WikiGenius/husky-gazebo-image-capture)
-
-## 4. Control and Tracking
-
-Questions:
-
-- Which controllers are good baselines for mobile-manipulator motion?
-- How do LQR, observers, and trajectory tracking connect to scan execution?
-- What can be released publicly without exposing unpublished methods?
-
-Related public repos:
-
-- [`robotics-control-learning-labs`](https://github.com/WikiGenius/robotics-control-learning-labs)
-- [`Cruise_control`](https://github.com/WikiGenius/Cruise_control)
-- [`3dof-robot-arm-report`](https://github.com/WikiGenius/3dof-robot-arm-report)
-
-## 5. 3D Perception and View Synthesis
-
-Questions:
-
-- How do ray geometry and view synthesis relate to active perception?
-- Which scene representations help reason about coverage and reconstruction?
-- How do neural representations compare with geometric SLAM for planning support?
-
-Related public repo:
-
-- [`nerf-lab`](https://github.com/WikiGenius/nerf-lab)
-
-## Paper Note Tags
-
-Use these tags consistently in future notes:
-
-```text
-active-perception
-coverage-planning
-line-scan
-hyperspectral-imaging
-mobile-manipulation
-whole-body-control
-state-estimation
-factor-graphs
-visual-slam
-uncertainty-aware-control
-nerf
-view-synthesis
-ros2
-moveit2
-```
+Use [project relationships](research-architecture.md) to connect reading to implementation, and the [paper-note template](paper-note-template.md) to record evidence.
