@@ -22,12 +22,19 @@ The research scope is open to different sensors and robot platforms. RGB-D and h
 
 | Area | Related projects |
 | --- | --- |
-| Planning and tracking | [WMM planning and tracking](https://github.com/WikiGenius/wmm-planning-and-tracking), [UGV–Panda geometric control](https://github.com/WikiGenius/ugv-panda-geometric-control) |
+| Planning and tracking | [WMM planning and tracking](https://github.com/WikiGenius/wmm-planning-and-tracking) |
 | Estimation and representation | [GTSAM SLAM Vision](https://github.com/WikiGenius/GTSAM_SLAM_VISION), [NeRF Lab](https://github.com/WikiGenius/nerf-lab) |
 | Kinematics and execution | [Screw Theory Toolkit](https://github.com/WikiGenius/RoboticScrewTheoryToolkit), [MoveIt grasping](https://github.com/WikiGenius/ros2-moveit-grasping-demo) |
 | An initial sensing application | [Line-scan scaffold](https://github.com/WikiGenius/line-scan-mobile-manipulator-demo) |
 
 These links identify possible implementation connections. They do not imply that a paper has been reproduced or a method validated.
+
+## Reading resources
+
+- [Topic taxonomy](docs/topic-taxonomy.md)
+- [Paper register](docs/core_papers_table.md) — no completed entries yet
+- [Paper-note template](docs/paper-note-template.md)
+- [Research layers and project relationships](docs/research-architecture.md)
 
 ## Paper-note template
 
